@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- UI interface meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font Awesome script -->
+    <script src="https://kit.fontawesome.com/9e65d56683.js"></script>
+    <!-- Page style sheet -->
+    <link rel="stylesheet" href="./styles.css">
+    <title>Form Validation</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <header>
+        <h2>Create Account</h2>
+      </header>
+      <form id="form" class="form">
+        <div class="form-control ">
+          <label for="username">Username</label>
+          <input type="text" placeholder="Type here..." class="input-text" id="username">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small></small>
+        </div>
+        <div class="form-control ">
+          <label for="email">Email</label>
+          <input type="email" placeholder="Type here..." class="input-text" id="email">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small></small>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <span>  </span>
+          <button id="rand-btn">Randomly Generate</button>
+          <button id="visible-btn" class="pw">
+            <i class="fas fa-eye"></i>
+            <i class="fas fa-eye-slash hide"></i>
+          </button>
+
+          <input type="password" placeholder="Type here..." class="input-text" id="password" maxlength="20">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small></small>
+        </div>
+        <div class="form-control" id="passwordCheck-container">
+          <label for="password-check">Password Check</label>
+          <input type="password" placeholder="Type here..." class="input-text" id="passwordCheck" maxlength="20">
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small id="pwcheckSmall"></small>
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+
+
+<!-- Scripts -->
+  <script src="./main.js"></script>
+<!-- Bootstrap javascript -->
+  </body>
+</html>
